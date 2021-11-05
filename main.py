@@ -47,3 +47,12 @@ print(monday.condition)
 monday_temp = int(monday.temp)
 monday_temp_F = monday_temp * 9/5 + 32
 print(monday_temp_F)
+
+# Create dataframe from scratch
+data_dict = {
+    "students": ["Amy", "James", "Angela"],
+    "grades": [76, 56, 65]
+}
+new_data = pandas.DataFrame(data_dict)
+print(new_data)
+new_data.to_csv("new_data.csv")
